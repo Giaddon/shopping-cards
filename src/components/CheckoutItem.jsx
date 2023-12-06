@@ -12,7 +12,7 @@ export default function CheckoutItem({ product }) {
   }
 
   return (
-    <div className="border rounded-2xl px-1 text-sm hover:bg-red-400 hover:text-white transition-colors hover:border-red-400 cursor-pointer" key={product.id} onClick={handleRemoveProduct}>
+    <div className="border rounded-2xl px-1 text-sm bg-white hover:bg-red-400 hover:text-white transition-colors hover:border-red-400 cursor-pointer" key={product.id} onClick={handleRemoveProduct}>
       <p>{product.title}</p>
       <p>${product.price.display()}</p>
     </div>
